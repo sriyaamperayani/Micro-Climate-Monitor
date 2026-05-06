@@ -1,0 +1,10 @@
+apiVersion: 1
+
+providers:
+  - name: MicroClimateDashboards
+    folder: Micro Climate
+    type: file
+    disableDeletion: false
+    editable: true
+    options:
+      path: /etc/grafana/dashboards
