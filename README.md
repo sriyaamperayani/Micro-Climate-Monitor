@@ -1,4 +1,4 @@
-# 🌡️ Micro Climate Monitor
+# Micro Climate Monitor
 
 Real-time environmental monitoring system with anomaly detection and live Grafana dashboards.
 
@@ -14,7 +14,6 @@ Real-time environmental monitoring system with anomaly detection and live Grafan
 
 ## Architecture
 
-\```
 Background Simulator (every 5s)
         │
         ▼
@@ -22,7 +21,7 @@ Background Simulator (every 5s)
    /readings                          │
    /anomalies (2σ detection)          ▼
                                Grafana Dashboard
-\```
+
 
 ---
 
@@ -39,7 +38,6 @@ Background Simulator (every 5s)
 
 ## Quick Start
 
-\```bash
 git clone https://github.com/sriyaamperayani/Micro-Climate-Monitor.git
 cd Micro-Climate-Monitor
 python -m venv venv && source venv/bin/activate
@@ -47,7 +45,6 @@ pip install -r requirements.txt
 cp .env.example .env
 docker compose up -d
 uvicorn main:app --reload
-\```
 
 | Service | URL |
 |---|---|
